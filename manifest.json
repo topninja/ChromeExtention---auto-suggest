@@ -1,0 +1,43 @@
+{
+    "manifest_version": 2,
+    "name": "Auto Suggest",
+    "short_name": "Auto Suggest",
+    "version": "1.1.1",
+    "description": "Description",
+    "background": {
+        "scripts": ["/assets/js/jquery-3.4.1.min.js", "/config.js", "/assets/js/background.js"]
+    },  
+    "icons": { 
+        "16": "16.png",
+        "32": "32.png",
+        "128": "128.png" 
+    },
+    "browser_action": {
+        "browser_style": false,
+        "default_icon": {
+            "128": "128.png"
+        },
+        "default_title": "David"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "permissions": [
+        "tabs",
+        "storage"       
+    ],
+    "content_scripts": [{
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                    "/assets/js/jquery-3.4.1.min.js",
+                    "/config.js",
+                    "/assets/js/contentscript_min.js",
+                    "/assets/js/textarea.js",
+                    "/assets/js/contentEditable_min.js"
+                ],
+            "css": ["/assets/css/textarea.css"]
+        }],
+        "web_accessible_resources": [
+            "index.html"
+        ]
+}

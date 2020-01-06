@@ -1,0 +1,196 @@
+.hwt-container {
+  /* display: inline-block;
+  position: relative;
+  overflow: hidden !important;
+  -webkit-text-size-adjust: none !important; */
+}
+
+.hwt-backdrop {
+  position: absolute;
+  /* z-index: 1; */
+  /* border: 2px solid #685972; */
+  background-color: #fff;
+  overflow: auto;
+  /* pointer-events: none; */
+}
+
+.hwt-highlights {
+  width: auto !important;
+  height: auto;
+  border-color: transparent !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  color: transparent !important;
+  overflow: hidden !important;
+}
+
+.hwt-input {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  /* border: 2px solid #74637f; */
+  border-radius: 0;
+  /* color: #444; */
+  background-color: transparent !important;
+  overflow: auto;
+  resize: none;
+  /* transition: transform 1s; */
+}
+
+.hwt-highlights,
+textarea {
+  padding: 10px;
+  /* font: 20px/28px 'Open Sans', sans-serif; */
+  letter-spacing: 1px;
+}
+textarea{
+  overflow: auto !important;
+}
+
+.hwt-content {
+  /* border: 1px solid; */
+  /* background: none transparent !important; */
+}
+
+.hwt-content {
+  /* width: 760px; */
+  /* height: 100px; */
+  /* padding: 20px; */
+  /* border: 1px solid #adb5bd; */
+  /* color: inherit; */
+  /* font: 18px/25px "Droid Sans Mono", sans-serif; */
+}
+
+.hwt-input:focus {
+  /* outline-color: #495057; */
+}
+
+.hwt-content mark {
+  border-radius: 3px;
+  color: transparent;
+  /* background-color: #b1d5e5; */
+  background: none;
+  position: relative;
+  z-index: 999;
+  cursor: pointer;
+  /* background-color: unset; */
+    border-radius: 0;
+    border: 0 !important;
+    /* border-bottom: 1px dashed #03a9f4; */
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.hwt-content mark:after {
+  border-bottom: 1px dashed rgb(3, 169, 244);
+    content: "-";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+}
+
+.hwt-content mark.red {
+  background-color: #ffc9c9;
+}
+
+.hwt-content mark.blue {
+  background-color: #a3daff;
+}
+
+.hwt-content mark.yellow {
+  background-color: #ffec99;
+}
+
+#chromeTooltipWrapper {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  color: #242b2e;
+}
+.chrome-tooltip {
+  border: 2px solid #eef2f6;
+  /* box-shadow: 0 1px 6px rgba(57,73,76,.35); */
+  border-radius: 6px;
+  padding: 6px;
+  width: 205px;
+  font-size: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+.chrome-tooltip-header {
+  margin-bottom: 0.6rem;
+}
+.chrome-tooltip .tooltip-text {
+  margin-bottom: 10px;
+}
+.chrome-btn {
+  width: 73px;
+  height: 30px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+.chrome-btn-primary {
+  background: #03a9f4 0% 0% no-repeat padding-box;
+
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px #0000000d;
+  color: #fff;
+}
+.chrome-btn-none {
+  color: #242b2e;
+  background: none;
+}
+
+.chrome-tooltip-footer {
+  border-top: 1px solid #ddd;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1.2rem 0.5rem 0.5rem;
+  cursor: pointer;
+}
+.chrome-tooltip-arrow {
+  border-color: #eef2f6 transparent;
+  border-style: solid;
+  border-width: 0px 7px 7px;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: -7px;
+  left: 15px;
+
+  /* width: 12px;
+    z-index: -1;
+    height: 6px;
+    transform: matrix(1, -1, 1, 1, 0, 5);
+    background: #EEF2F6 0% 0% no-repeat padding-box; */
+}
+.copyWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.link-url {
+  /* height: 18px; */
+  width: 123px;
+  /* padding: 0; */
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  /* margin: 0 5px 0 5px; */
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tooltip-link {
+  color: #0ea7f4 !important;
+}
+#techspecsLogo svg {
+  width: 80px;
+  height: auto;
+}
